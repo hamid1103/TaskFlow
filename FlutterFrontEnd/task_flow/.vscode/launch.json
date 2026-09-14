@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "task_flow (Linux, Debug)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "linux",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "task_flow (Linux, Profile)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "linux",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "task_flow (Linux, Release)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "linux",
+            "flutterMode": "release"
+        }
+    ]
+}

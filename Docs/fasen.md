@@ -5,7 +5,7 @@ leerdoel. Statuswaarden: `niet gestart` · `bezig` · `afgerond`.
 
 | # | Fase | Doelen | Status | Gestart | Afgerond |
 |---|---|---|---|---|---|
-| 1 | Flutter-omgeving + basisvaardigheden | D1 | niet gestart | | |
+| 1 | Flutter-omgeving + basisvaardigheden | D1 | bezig | 2026-09-14 | |
 | 2 | REST API met authenticatie (.NET) | D2, D4 | niet gestart | | |
 | 3 | Flutter UI en navigatie | D1 | niet gestart | | |
 | 4 | API-koppeling + state management (Riverpod) | D2, D3 | niet gestart | | |
@@ -24,7 +24,7 @@ reload). Basis van de taal Dart. Kleine wegwerp-widgets om gevoel te krijgen bij
 de widget tree en het constraints-model.
 
 **Op te leveren**
-- [ ] Werkende lokale dev-omgeving, beschreven in de `README.md` in de repo-root
+- [ ] Werkende lokale dev-omgeving, beschreven in de `README.md` in de docs folder
 - [ ] Repo-skelet met een vastgestelde mapstructuur
 - [ ] Notities over Dart-concepten die afwijken van talen die ik al ken
 
