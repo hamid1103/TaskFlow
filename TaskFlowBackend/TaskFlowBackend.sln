@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFlowBackend", "TaskFlowBackend.csproj", "{A6AF15BC-4C5A-4F11-AEC5-E17D14809A7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7AB9507E-C512-4826-9F57-BD6E55F1EC47}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6AF15BC-4C5A-4F11-AEC5-E17D14809A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6AF15BC-4C5A-4F11-AEC5-E17D14809A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6AF15BC-4C5A-4F11-AEC5-E17D14809A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6AF15BC-4C5A-4F11-AEC5-E17D14809A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

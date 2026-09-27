@@ -1,0 +1,7 @@
+﻿services:
+  taskflowbackend:
+    image: taskflowbackend
+    build:
+      context: .
+      dockerfile: Dockerfile
+
