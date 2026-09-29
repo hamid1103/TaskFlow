@@ -1,0 +1,30 @@
+# Build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+publish/
+out/
+
+# IDE / user-specific files
+.idea/
+.vs/
+*.user
+*.suo
+*.rsuser
+*.DotSettings.user
+
+# Test results / coverage
+TestResults/
+*.coverage
+coverage*.json
+coverage*.xml
+
+# Local secrets & environment
+appsettings.*.local.json
+.env
+*.env.local
+
+# NuGet
+*.nupkg
+**/packages/
