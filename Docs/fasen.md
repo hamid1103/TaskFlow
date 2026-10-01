@@ -5,8 +5,8 @@ leerdoel. Statuswaarden: `niet gestart` · `bezig` · `afgerond`.
 
 | # | Fase | Doelen | Status | Gestart | Afgerond |
 |---|---|---|---|---|---|
-| 1 | Flutter-omgeving + basisvaardigheden | D1 | bezig | 2026-09-14 | |
-| 2 | REST API met authenticatie (.NET) | D2, D4 | niet gestart | | |
+| 1 | Flutter-omgeving + basisvaardigheden | D1 | afgerond | 2026-09-14 | 2026-09-27 |
+| 2 | REST API met authenticatie (.NET) | D2, D4 | afgerond | 2026-09-29 | 2026-10-01|
 | 3 | Flutter UI en navigatie | D1 | niet gestart | | |
 | 4 | API-koppeling + state management (Riverpod) | D2, D3 | niet gestart | | |
 | 5 | Lokale opslag / offline-ondersteuning (SQLite via drift) | D4 | niet gestart | | |

@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using TaskFlowBackend.Data;
 using TaskFlowBackend.Models;
 
@@ -29,5 +30,10 @@ public class TaskContextUserRepository : IUserRepository
         _context.Users.Update(user);
         await _context.SaveChangesAsync();
     }
-    
+
+    public async Task<User> GetUserIdByName(string name)
+    {
+        User user = await _context.Users.Where(u => u.Username == name).FirstAsync();
+        return user;
+    }
 }

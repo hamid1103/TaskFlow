@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using TaskFlowBackend.Data;
 using TaskFlowBackend.Models;
+using TaskFlowBackend.Repositories.UserRepository;
+using TaskFlowBackend.Services;
 
 namespace TaskFlowBackend.Repositories.TaskRepository;
 
@@ -12,25 +14,31 @@ public class TaskContextTaskRepository : ITaskRepository
         this._context = context;
     }
 
-    public async Task<int> GetTotalCountAsync()
+    public async Task<int> GetTotalCountAsync(int userId)
     {
-        return await _context.Tasks.CountAsync();
+        return await _context.Tasks.CountAsync(t => t.UserId == userId);
     }
     
-    public async Task<List<PersonalTask>> GetAllAsync()
+    public async Task<List<PersonalTask>> GetAllAsync(int userId)
     {
-        return await GetAllAsync(1, 25);
+        return await GetAllAsync(1, 25, userId);
     }
     
-    public async Task<List<PersonalTask>> GetAllAsync(int page, int pageSize)
+    public async Task<List<PersonalTask>> GetAllAsync(int page, int pageSize, int userId)
     {
-        List<PersonalTask> tasks = await _context.Tasks.Take(pageSize).Skip((page-1)*pageSize).ToListAsync();
+        List<PersonalTask> tasks = await _context.Tasks
+            .Where(t => t.UserId == userId)
+            .OrderBy(t => t.Id)
+            .Skip((page-1)*pageSize)
+            .Take(pageSize)
+            .ToListAsync();
         return tasks;
     }
 
-    public async Task<PersonalTask> GetByIdAsync(int id)
+    public async Task<PersonalTask?> GetByIdAsync(int id, int userId)
     {
-        PersonalTask? task = await _context.Tasks.FindAsync(id);
+        //Filtering on userId means other users' tasks behave as if they don't exist
+        PersonalTask? task = await _context.Tasks.FirstOrDefaultAsync(t => t.Id == id && t.UserId == userId);
         return task;
     }
 
